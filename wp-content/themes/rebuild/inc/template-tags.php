@@ -31,11 +31,11 @@ function rebuild_post_thumbnail() {
  *
  * @param string $link
  */
-function rebuild_support_button( string $link='' ) {
+function rebuild_support_button( $link='' ) {
     $link = !empty($link) ? $link : get_field('support_link', 'contact');
     ?>
 
-    <a href="<?php echo $link; ?>" class="btn btn-secondary">
+    <a href="<?php echo $link; ?>" target="_blank" class="btn btn-secondary">
         <div class="magnetic-area"></div>
         <svg class="svg_icon btn_svg_2">
             <use xlink:href="<?php echo get_template_directory_uri();  ?>/img/svg_map.svg#btn_svg_2" />

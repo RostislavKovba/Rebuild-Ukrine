@@ -205,10 +205,10 @@ if (! is_admin()) {
     $paypal = new PayPal();
 
     echo '<pre>';
-    print_r($paypal->create_invoice());
+//    print_r($paypal->create_invoice());
 //    print_r($paypal->delete_invoice('INV2-B2GN-FGKG-XCBV-FQMJ'));
 //    print_r($paypal->send_invoice('INV2-WRD2-AE6G-6QS9-DFRY'));
 //    print_r($paypal->get_invoice_single());
-    print_r($paypal->get_invoices_list());
+//    print_r($paypal->get_invoices_list());
     echo '</pre>';
 }

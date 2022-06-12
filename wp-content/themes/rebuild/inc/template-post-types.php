@@ -136,7 +136,7 @@ function add_new_post_types()
             'hierarchical'  => true,
             'menu_icon'     => $post['icon'],
             'menu_position' => $post['position'],
-            'supports'      => [ "title", "editor", "thumbnail", "custom-fields", "revisions", "author" ],
+            'supports'      => [ "title", "editor", "thumbnail", "custom-fields", "revisions", "author", "page-attributes" ],
         ];
 
         register_post_type( $post['slug'], $args );
