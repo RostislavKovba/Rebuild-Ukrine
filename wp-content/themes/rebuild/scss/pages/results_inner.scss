@@ -6,6 +6,9 @@
             z-index: 2;
             background: $white;
             padding-bottom: var(--spacing_1);
+            @include breakpoint(sm) {
+                border-bottom-right-radius: 65px;
+            }
             &:after{
                 transition: 2s;
                 content: '';
@@ -103,6 +106,9 @@
         &_3{
             border-bottom-left-radius: 100px;
             margin-bottom: var(--spacing_6);
+            @include breakpoint(sm) {
+                border-bottom-left-radius: 65px;
+            }
             &:after{
                 display: none;
             }

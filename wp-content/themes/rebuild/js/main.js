@@ -37,7 +37,7 @@ jQuery(function($) {
             });
         }
 
-        if($(".btn").length > 0){
+        if($(".btn").length > 0 && window.innerWidth > 1024){
             const btns = document.querySelectorAll(".btn, .swiper-button-prev, .swiper-button-next, .social svg");
 
             btns.forEach((btn) => {

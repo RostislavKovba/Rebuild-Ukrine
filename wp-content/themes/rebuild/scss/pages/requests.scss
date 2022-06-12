@@ -94,10 +94,12 @@
                     padding: var(--spacing_10)  var(--spacing_8) var(--spacing_8);
                     @include breakpoint(sm) {
                        display: none;
+                        margin-left: 0;
                     }
                     &.opened{
                         opacity: 0;
                         pointer-events: none;
+                        //display: none;
                     }
                 }
             }
@@ -114,10 +116,12 @@
                     @include breakpoint(sm) {
                         display: block;
                         margin: var(--spacing_8) auto var(--spacing_10) ;
+                        margin-left: 0;
                     }
                     &.opened{
                         opacity: 0;
                         pointer-events: none;
+                        display: none;
                     }
                 }
             }
@@ -127,7 +131,7 @@
             .btn-secondary{
                 margin: var(--spacing_10) auto 0;
                 @include breakpoint(sm) {
-                    margin: var(--spacing_6) auto 0;
+                   width: 100%;
                 }
             }
             .wrap{
@@ -180,6 +184,9 @@
         background: $blue_5;
         overflow: hidden;
         border-bottom-right-radius: 50px;
+        @include breakpoint(sm) {
+            background: $white;
+        }
         p{
             padding-bottom: var(--spacing_10);
         }
@@ -189,10 +196,20 @@
         }
         &.opened{
             height: var(--el-height);
+            .btn-extra{
+                svg{
+                    transform: rotate(180deg);
+                }
+            }
+            .r_m{
+                @include breakpoint(sm) {
+                    display: none;
+                }
+            }
         }
         .btn-extra{
             @include breakpoint(sm) {
-                justify-content: center;
+                margin-left: 0;
             }
         }
     }

@@ -171,4 +171,7 @@
   pointer-events: none;
   transition: width .3s, height .3s, opacity .3s;
   z-index: 2;
+  @include breakpoint(lg) {
+    opacity: 0;
+  }
 }

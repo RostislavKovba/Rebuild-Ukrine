@@ -40,16 +40,17 @@ body{
     font-size: var(--size_1);
     font-weight: 500;
     text-transform: uppercase;
-    line-height: 1.4;
+    line-height: 1.2;
 }
 .title{
     font-family: $font_family_2;
     font-size: var(--size_3);
     font-weight: 500;
-    line-height: 1.4;
+    line-height: 1.2;
 }
 .subtitle{
     font-family: $font_family_2;
+    line-height: 1.2;
     &_1{
         @extend .subtitle;
         font-size: var(--size_4);
@@ -66,6 +67,7 @@ body{
     &_3{
         @extend .subtitle;
         font-size: var(--size_6);
+        line-height: 1.3;
     }
 }
 

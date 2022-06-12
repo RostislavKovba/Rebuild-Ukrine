@@ -128,6 +128,7 @@
                         left: 50%;
                         top: -22%;
                         transform: translateX(-50%);
+                        width: 27%;
                     }
                     @include breakpoint(sm) {
                         display: block;
@@ -184,6 +185,9 @@
         &_7{
             padding: var(--spacing_1) 0;
             margin-bottom: var(--spacing_3);
+            @include breakpoint(sm) {
+                padding: 0 0 var(--spacing_1);
+            }
             .container{
                 display: flex;
                 justify-content: space-between;

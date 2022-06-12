@@ -24,7 +24,7 @@ $support_link = '#support';
                 </p>
             </div>
 
-            <div class="btn-extra">
+            <div class="btn-extra r_m">
                 <span>Read more</span>
                 <svg class="svg_icon svg_arrow">
                     <use xlink:href="<?php echo get_template_directory_uri();  ?>/img/svg_map.svg#svg_arrow" />
@@ -44,7 +44,7 @@ $support_link = '#support';
 
             <?php rebuild_support_button($support_link); ?>
 
-            <div class="btn-extra">
+            <div class="btn-extra r_m">
                 <span>Read more</span>
                 <svg class="svg_icon svg_arrow">
                     <use xlink:href="<?php echo get_template_directory_uri();  ?>/img/svg_map.svg#svg_arrow" />
@@ -57,7 +57,7 @@ $support_link = '#support';
         <div class="cover">
             <?php the_content(); ?>
 
-            <div class="btn-extra">
+            <div class="btn-extra h_d">
                 <span>Hide</span>
                 <svg class="svg_icon svg_arrow">
                     <use xlink:href="<?php echo get_template_directory_uri();  ?>/img/svg_map.svg#svg_arrow" />
