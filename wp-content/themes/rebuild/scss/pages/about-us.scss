@@ -33,16 +33,24 @@
                 position: relative;
                 > .half-circle{
                     &-1{
+                        transition: $transition;
                         left: 5%;
                         right: unset;
                         transform: rotate(215deg);
                         bottom: unset;
                         top: 0;
+                        &:hover{
+                            transform: rotate(186deg);
+                        }
                     }
                     &-2{
+                        transition: $transition;
                         right: 40%;
                         transform: rotate(1deg);
                         bottom: 32%;
+                        &:hover{
+                            transform: rotate(25deg);
+                        }
                         @include breakpoint(xl) {
                            right: 45%;
                            bottom: 25%;
@@ -52,9 +60,13 @@
                         }
                     }
                     &-3{
+                        transition: $transition;
                         right: -2%;
                         transform: rotate(-35deg);
                         bottom: 32%;
+                        &:hover{
+                            transform: rotate(-70deg);
+                        }
                     }
                     @include breakpoint(md) {
                          --size: 40px;
@@ -131,7 +143,7 @@
                 transition: 2s ease;
                 content: '';
                 background: $blue_1;
-                width: 0;
+                width: 50%;
                 height: 600px;
                 position: absolute;
                 right: 0;
@@ -155,14 +167,10 @@
                    display: none;
                 }
             }
-            &.enter{
-                &:after{
-                    width: 50%;
-                }
-            }
            .container{
                 > img{
                     width: 100%;
+                    margin-bottom: var(--spacing_5);
                 }
                 .title{
                     padding: var(--spacing_6) 0;

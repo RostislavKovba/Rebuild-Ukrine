@@ -80,7 +80,7 @@
             .container{
                 display: flex;
                 justify-content: space-between;
-                align-items: baseline;
+                align-items: flex-start;
                 @include breakpoint(md) {
                     flex-direction: column;
                 }
@@ -138,6 +138,7 @@
     border-bottom-left-radius: var(--radius);
     border-top-left-radius:var(--radius);
     width: 45%;
+    overflow: hidden;
     @include breakpoint(xxl) {
        width: 55%;
     }

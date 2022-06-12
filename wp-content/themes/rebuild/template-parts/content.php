@@ -18,9 +18,9 @@
             <span>From <?php the_field('city'); ?></span>
         </div>
 
-        <p class="heading">
-            <?php the_title(); ?>
-        </p>
+        <div class="heading animated_title">
+            <p class="t1"> <?php the_title(); ?></p>
+        </div>
 
         <div class="content editor">
             <?php the_content(); ?>

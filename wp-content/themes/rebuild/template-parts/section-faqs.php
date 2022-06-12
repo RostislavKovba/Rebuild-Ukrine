@@ -4,7 +4,7 @@
  */
 ?>
 
-<section class="section_7 linear_bg">
+<section class="section_7 linear_bg scroll-y">
     <div class="container">
         <div class="column">
             <p class="heading">Faq</p>

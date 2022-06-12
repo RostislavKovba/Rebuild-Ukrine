@@ -40,6 +40,7 @@ body{
     font-size: var(--size_1);
     font-weight: 500;
     text-transform: uppercase;
+    line-height: 1.4;
 }
 .title{
     font-family: $font_family_2;
@@ -65,5 +66,69 @@ body{
     &_3{
         @extend .subtitle;
         font-size: var(--size_6);
+    }
+}
+
+.animated_title{
+    p{
+        overflow: hidden;
+    }
+    span {
+        position: relative;
+        display: inline-block;
+        top: 100px;
+        &.spacing{
+            margin-left: var(--spacing_10);
+        }
+    }
+}
+
+.textShowUp{
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(40px);
+    position: relative;
+}
+
+.enter{
+    .animated_title {
+        p {
+            &.t1 {
+                span {
+                    animation: lettersUp .6s forwards cubic-bezier(.91, .06, .23, .94);
+                    @for $i from 1 through 100 {
+                        &:nth-child(#{$i}) {
+                            animation-delay: $i * 0.03s;
+                        }
+                    }
+                }
+            }
+
+            &.t2 {
+                span {
+                    animation: lettersUp .6s forwards cubic-bezier(.91, .06, .23, .94);
+                    @for $i from 1 through 100 {
+                        &:nth-child(#{$i}) {
+                            animation-delay: $i * 0.06s;
+                        }
+                    }
+                }
+            }
+
+            &.t3 {
+                span {
+                    animation: lettersUp .6s forwards cubic-bezier(.91, .06, .23, .94);
+                    @for $i from 1 through 100 {
+                        &:nth-child(#{$i}) {
+                            animation-delay: $i * 0.09s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .textShowUp{
+        opacity: 1;
+        transform: translateY(0px);
     }
 }

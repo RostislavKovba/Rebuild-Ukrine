@@ -49,6 +49,14 @@
     opacity: 1;
   }
 }
+@keyframes lettersUp {
+  0% {
+    top: 100px;
+  }
+  100% {
+    top: 0;
+  }
+}
 
 @keyframes sideSlide {
   60% {

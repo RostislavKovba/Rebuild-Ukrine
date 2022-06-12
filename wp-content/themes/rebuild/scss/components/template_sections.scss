@@ -35,6 +35,8 @@
 
 .half-circle-list{
     padding-bottom: var(--spacing_2);
+    position: relative;
+    z-index: 2;
     &.enter{
         .container{
             .column{

@@ -12,8 +12,10 @@
             <path  class="scrolling-path" d="M1 1C157.227 20.066 185.993 93.9374 178.575 138.559C174.275 164.421 160.5 180 153.5 173.5C135.335 156.633 274.682 95.9546 353.203 193.094C387.576 235.618 424.077 377.777 379.052 443" stroke="#9BA6EE" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <div class="container">
-            <h1 class="heading">
-                <?php the_title(); ?>
+            <h1 class="heading animated_title">
+                <p class="t1">
+                    <?php the_title(); ?>
+                </p>
             </h1>
 
             <div class="row" id="filterData">

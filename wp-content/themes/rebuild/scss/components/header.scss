@@ -7,8 +7,7 @@ header{
   transition: $transition;
   transform: translateY(0);
   &.header_bg{
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255,1);
     a{
       cursor: pointer;
     }
@@ -105,9 +104,12 @@ header{
             color: $white;
           }
         }
-        &.activeItem{
+        &.activeItem, &.current-menu-item{
           > a{
             color: $blue_1;
+            @include breakpoint(lg) {
+              color: $blue_2;
+            }
           }
         }
       }

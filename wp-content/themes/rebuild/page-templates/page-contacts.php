@@ -8,13 +8,13 @@
 
 <main class="page-wrapper contacts-page">
 
-    <section class="section_1">
+    <section class="section_1 scroll-y">
         <div class="container">
             <div class="row block_1">
                 <div class="column">
-                    <p class="heading">
-                        <?php the_title(); ?>
-                    </p>
+                    <div class="heading animated_title">
+                        <p class="t1"><?php the_title(); ?></p>
+                    </div>
 
                     <div class="group">
                         <svg class="svg_icon svg_phone">
@@ -59,7 +59,7 @@
         </div>
     </section>
 
-    <section class="section_2">
+    <section class="section_2 scroll-y">
         <div class="container">
             <div class="column">
                 <p class="heading">contact </br> us</p>

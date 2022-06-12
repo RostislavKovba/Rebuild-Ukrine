@@ -1,6 +1,6 @@
 .btn{
   $border_radius: 100px;
-  transition: $transition;
+  transition: 0.5s;
   position: relative;
   display: flex;
   align-items: center;
@@ -29,7 +29,8 @@
     background: $yellow_1;
     color: $blue_1;
     border-radius: $border_radius;
-    padding: 10px 27px;
+    padding: 13px 27px;
+    max-height: 52px;
     span{
       color: $blue_1;
       position: relative;
@@ -67,10 +68,13 @@
     span{
       color: $white;
       @include breakpoint(sm) {
-        margin: 0 var(--spacing_7);
+        margin: 0 var(--spacing_7) !important;
       }
       + svg{
         margin-left: var(--spacing_12);
+        @include breakpoint(sm) {
+          margin: 0 !important;
+        }
       }
     }
     &:after{
@@ -141,7 +145,7 @@
     }
   }
   .swiper-button-prev, .swiper-button-next{
-    transition: $transition;
+    transition: 0.5s;
     --size: 68px;
     color: $white;
     font-size: 25px;
@@ -172,15 +176,20 @@
       position: absolute;
       align-self: center;
     }
+    &:hover{
+      &:after{
+        color: $blue_1;
+      }
+    }
     &:not(:last-child){
       margin-right: var(--spacing_5);
     }
     &:before{
-      transition:  $transition;
+      transition:  0.5s;
       content: '';
       border-radius: 100%;
       position: absolute;
-      background: rgba(255, 255, 255, 0.3);
+      background: rgba(255, 255, 255, 1);
       width: 100%;
       height: 100%;
       transform: translateX(-100%) translateY(-100%);

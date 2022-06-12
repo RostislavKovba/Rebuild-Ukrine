@@ -18,6 +18,7 @@ form{
         background: $blue_1;
         padding: 0 var(--spacing_14);
         font-size: var(--size_9);
+        z-index: 3;
       }
     }
   }

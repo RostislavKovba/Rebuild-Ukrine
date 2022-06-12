@@ -27,9 +27,10 @@ footer{
         .half-circle{
           position: relative;
           animation: none;
+          transition: $transition;
           &-1{
             right: 10%;
-            transform: rotate(200deg);
+            transform: rotate(180deg);
             bottom: -25px;
             @include breakpoint(xxll) {
               right: 4%;
@@ -37,8 +38,16 @@ footer{
           }
           &-2{
             right: -30%;
-            transform: rotate(-220deg);
+            transform: rotate(-200deg);
             bottom: 0;
+          }
+          &:hover{
+            &:first-child{
+              transform: rotate(200deg);
+            }
+            &:last-child{
+              transform: rotate(-220deg);
+            }
           }
         }
       }
