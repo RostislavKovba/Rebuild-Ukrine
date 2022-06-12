@@ -24,9 +24,10 @@ jQuery(function($)
                     $('#filterData').append(data);
                     loadBtn.find('span').text('See more');
                     paged++;
-                    if (paged == max_pages) loadBtn.remove();
-                } else {
-                    loadBtn.remove();
+                    if (paged == max_pages) {
+                        loadBtn.remove();
+                        $('#loadMoreLine').remove();
+                    }
                 }
             }
         });
